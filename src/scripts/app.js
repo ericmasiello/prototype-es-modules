@@ -1,3 +1,8 @@
 import { add } from './math.js';
 
-console.log(add(5, 6));
+(function($) {
+  $('#button').click(() => {
+    alert(`4 + 6 = ${add(4, 6)}`);
+  });
+})(window.$);
+
